@@ -5,7 +5,8 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Resources from "./pages/Resources";
-
+import Api from "./pages/Api";
+import WeatherApi from "./pages/WeatherApi";
 function App() {
   return (
     <Router>
@@ -15,6 +16,8 @@ function App() {
         <Route path="blogs" element={<Blogs />} />
         <Route path="resources" element={<Resources />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="/Api" element={<Api />} />
+        <Route path="/WeatherApi" element={<WeatherApi />} />
       </Routes>
     </Router>
   );

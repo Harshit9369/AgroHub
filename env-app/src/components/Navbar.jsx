@@ -11,13 +11,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
+    <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white ">
       <li className="flex items-center mx-0 my-0 px-0 py-0">
         <Link to="/">
           <img src={logo2} alt="logo" className="w-18 h-16" />
         </Link>
       </li>
-      <ul className="hidden md:flex items-center">
+      <ul className="hidden md:flex items-center text-l">
         <li className="p-4">
           <Link to="/">Home</Link>
         </li>

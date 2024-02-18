@@ -18,7 +18,7 @@ function Resources() {
     <div>
       <Navbar />
       <div className="w-full h-screen mx-0 py-10 px-10 bg-white">
-      <p className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-[#00df9a] flex justify-center items-center">Upload an Image to Begin</p>        <form className="flex flex-col items-center mt-20">
+        <p className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-[#00df9a] flex justify-center items-center">Upload an Image to Begin</p>        <form className="flex flex-col items-center mt-20">
           <div
             onDragOver={onDragOver}
             onDrop={onDrop}
