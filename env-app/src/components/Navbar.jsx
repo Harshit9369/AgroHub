@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import logo2 from "../assets/logo2.png";
+import marketplaceIcon from "../assets/redirect.png"; // Assuming you have the icon file
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,18 +12,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white ">
-      <li className="flex items-center mx-0 my-0 px-0 py-0">
+    <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
+      <li className="flex items-center justify-start mx-0 my-0 px-0 py-0 pr-4"> {/* Added pr-4 for right padding */}
         <Link to="/">
           <img src={logo2} alt="logo" className="w-18 h-16" />
         </Link>
       </li>
-      <ul className="hidden md:flex items-center text-l">
+      <ul className="hidden md:flex items-center text-l space-x-4">
         <li className="p-4">
           <Link to="/">Home</Link>
         </li>
-        <li className="p-4">
-          <Link to="/blogs">Blogs</Link>
+        <li className="pr-0 flex items-center">
+          <Link to="https://www.iffcobazar.in/en/agri-machinery/sprayer-pumps">
+            Marketplace
+          </Link>
+          <Link to="https://www.iffcobazar.in/en/agri-machinery/sprayer-pumps">
+            <img src={marketplaceIcon} alt="Redirect" className="ml-0 h-5" />
+          </Link>
         </li>
         <li className="p-4">
           <Link to="/resources">Resources</Link>
